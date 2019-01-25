@@ -24,8 +24,12 @@ const prefix = "1";
 var adminprefix = '1'
 /////////////////////////
 ////////////////////////
+client.on('ready', () => {
+	console.log('I am ready!'); 
+	client.user.setActivity("1help" , {type:'LISTENING'});
+  });
 
-client.user.setActivity("1help" , {type:'LISTENING'});
+
 
 client.on('message', async msg =>{
 	if (msg.author.bot) return undefined;
