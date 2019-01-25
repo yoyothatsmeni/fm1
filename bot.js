@@ -295,9 +295,8 @@ function play(guild, song) {
 
 client.on('message', message => {
     if (message.content === '1help') {
-        let helpEmbed = new Discord.RichEmbed()
+        const helpEmbed = new Discord.RichEmbed()
         .setTitle('**أوامر الميوزك...**')
-        .setDescription('**برفكس البوت (!)**')
         .addField('play', 'لتشغيل اغنية')
         .addField('join', 'دخول رومك الصوتي')
         .addField('disconnect', 'الخروج من رومك الصوتي')
@@ -305,10 +304,10 @@ client.on('message', message => {
         .addField('pause', 'ايقاف الاغنية مؤقتا')
         .addField('resume', 'تكملة الاغنية')
         .addField('queue', 'اظهار قائمة التشغيل')
-		.addField('np', 'اظهار الاغنية اللي انت مشغلها حاليا')
-		.addField('ping', 'اظهار سرعه (بنج) البوت')
+	.addField('np', 'اظهار الاغنية اللي انت مشغلها حاليا')
+	.addField('ping', 'اظهار سرعه (بنج) البوت')
         .setFooter('Prefix [1]')
-				.stColor("#ff0000")
+	.setColor("#ff0000")
       message.channel.send(helpEmbed);
     }
 });
