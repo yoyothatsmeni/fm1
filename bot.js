@@ -304,7 +304,7 @@ client.on('message', message => {
         .addField('queue', 'اظهار قائمة التشغيل')
 	.addField('np', 'اظهار الاغنية اللي انت مشغلها حاليا')
 	.addField('ping', 'اظهار سرعه (بنج) البوت')
-        .setFooter(`Prefix [${prefix}]`)
+        .setFooter('Prefix [1]')
 	.setColor("#ff0000")
       message.channel.send(helpEmbed);
     }
