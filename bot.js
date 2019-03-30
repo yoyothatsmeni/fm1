@@ -298,15 +298,13 @@ client.on('message', message => {
         const helpEmbed = new Discord.RichEmbed()
         .setTitle('**أوامر الميوزك...**')
         .addField('play', 'لتشغيل اغنية')
-        .addField('join', 'دخول رومك الصوتي')
-        .addField('disconnect', 'الخروج من رومك الصوتي')
         .addField('skip', 'تخطي الأغنية')
         .addField('pause', 'ايقاف الاغنية مؤقتا')
         .addField('resume', 'تكملة الاغنية')
         .addField('queue', 'اظهار قائمة التشغيل')
 	.addField('np', 'اظهار الاغنية اللي انت مشغلها حاليا')
 	.addField('ping', 'اظهار سرعه (بنج) البوت')
-        .setFooter('Prefix [1]')
+        .setFooter(`Prefix [${prefix}]`)
 	.setColor("#ff0000")
       message.channel.send(helpEmbed);
     }
